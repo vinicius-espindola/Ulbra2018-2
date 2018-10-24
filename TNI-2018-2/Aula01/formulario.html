@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Formulário em HTML </title>
+	<link rel="stylesheet" type="text/css" href="formulario.css">
+	<meta name="description" content="Formulário em html">
+	<meta http-equiv="content-type">
+</head>
+<body>
+	<div class="tudo">
+	<div id="cabeçalho">
+	<h1> Cadastro de Funcionário </h1> 
+</div>
+
+<form action="script_do_formulario.php" method="get">
+
+<fieldset>
+	<legend> <b> Foto </b> </legend>
+
+	<label for="Foto"> Foto: </label> 
+	<input type="file" name="foto"> <br>
+</fieldset>
+
+<br>
+
+<fieldset>
+	<legend><b> Dados Pessoais </b> </legend>
+
+	<div id="label">
+	<label for="nome"> Nome: </label></div>
+	<input type="text" name="nome"> <br />
+
+	<div id="label"> 
+	<label for="sobrenome"> Sobrenome: </label> </div>
+	<input type="text" name="sobrenome"> <br>
+
+	<div id="label">
+	<label for="RG"> RG: </label> </div>
+	<input type="text" name="RG" size="13" maxlength="13"> <br>
+
+	<div id="label">
+	<label for="CPF"> CPF: </label> </div>
+	<input type="text" name="CPF" size="9" maxlength="9"> - <input type="text" name="CPF" size="2" maxlength="2"><br />
+
+	<div id="label">
+	<label for="CNH"> CNH: </label> </div>
+	<input type="text" name="CNH" size="11" maxlength="11"> <br>
+
+	<div id="label">
+	<label for="Categoria"> Categoria: </label> </div>
+	<input type="radio" name="categoria" value="A"> A
+	<input type="radio" name="categoria" value="A e B"> A e B
+	<input type="radio" name="categoria" value="B"> B
+	<input type="radio" name="categoria" value="C"> C 
+	<input type="radio" name="categoria" value="D"> D 
+	<input type="radio" name="categoria" value="E"> E <br>
+
+	<div id="label">
+	<label for="cargo"> Cargo Pretendido: </label> </div> <br>
+	<input type="checkbox" name="cargo1" value="motorista"> Motorista <br>
+	<input type="checkbox" name="cargo2" value="serviços gerais"> Serviços Gerais <br>
+	<input type="checkbox" name="cargo3" value="auxiliar administrativo"> Auxiliar Administrativo <br>
+	<input type="checkbox" name="cargo4" value="Outros"> Outros <br>
+
+</fieldset>
+<br>
+
+<fieldset>
+	<legend><b> Endereço </b></legend>
+
+	<div id="label">
+	<label for="rua"> Rua: </label></div>
+	<input type="text" name="rua"> <br>
+
+	<div id="label">
+	<label for="numero"> Número: </label></div>
+	<input type="text" name="numero" size="4"> <br>
+
+	<div id="label">
+	<label for="bairro"> Bairro: </label></div>
+	<input type="text" name="Bairro"> <br>
+
+	<div id="label">
+	<label for="estado"> Estado: </label></div>
+	<select name="estado">
+	<option value="ac"> Acre </option>
+	<option value="al"> Alagoas </option>
+	<option value="Am"> Amazonas </option>
+	<option value="ap"> Amapá </option>
+	<option value="ba"> Bahia </option>
+	<option value="ce"> Ceará </option>
+	<option value="df"> Distrito Federal </option>
+	<option value="es"> Espírito Santo </option>
+	<option value="go"> Goiás </option>
+	<option value="ma"> Maranhão </option>
+	<option value="mt"> Mato Grosso </option>
+	<option value="ms"> Mato Grosso do Sul </option>
+	<option value="mg"> Minas Gerais </option>
+	<option value="pa"> Pará </option>
+	<option value="pr"> Paraíba </option>
+	<option value="pr"> Paraná </option>
+	<option value="pe"> Pernambuco </option>
+	<option value="pi"> Piauí </option>
+	<option value="rj"> Rio de Janeiro </option>
+	<option value="rn"> Rio Grande do Norte </option>
+	<option value="ro"> Rondônia </option>
+	<option value="rs"> Rio Grande do Sul </option>
+	<option value="rr"> Roraima </option>
+	<option value="sc"> Santa Catarina </option>
+	<option value="se"> Sergipe </option>
+	<option value="sp"> São Paulo </option>
+	<option value="to"> Tocantins </option>
+	</select> <br>
+
+	<div id="label">
+	<label for="cidade"> Cidade: </label></div>
+	<input type="text" name="cidade"> <br>
+
+	<div id="label">
+	<label for="cep"> CEP: </label></div>
+	<input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3"> <br>
+</fieldset>
+
+<br>
+
+<fieldset>
+	<legend><b> Última Experiência Profissional </b></legend>
+
+	<div id="label">
+	<label for="empresa"> Empresa: </label></div>
+	<input type="text" name="empresa"> <br>
+
+	<div id="label">
+	<label for="cargo"> Cargo: </label></div>
+	<input type="text" name="cargo"> <br>
+
+	<div id="label">
+	<label for="período"> Período: </label> </div>
+	<input type="date" name="bday"> - <input type="date" name="bday"> <br>
+</fieldset>
+
+<br>
+
+<fieldset>
+	<legend><b> Dados para Contato: </b></legend>
+
+	<div id="label">
+	<label> Telefone: </label></div>
+	<input type="text" name="Telefone"> <br>
+
+	<div id="label">
+	<label> E-mail: </label></div>
+	<input type="email" name="email"> <br>
+
+	<div id="label">
+	<label> Facebook: </label></div>
+	<input type="url" name="Facebook"> <br>
+</fieldset>
+
+<br>
+
+<input type="submit" name="salvar">
+<input type="reset" value="Limpar">
+
+
+	
+</form>
+
+</div>
+</body>
+</html>
